@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../publicPage/Header'
 import studySignUp from '../../assets/studySignUp.png'
 import { Link } from 'react-router-dom'
-export default function SignUp() {
+export default function Registre() {
   return (
     <>
-        <Header/>
         <section className='mt-5 flex items-center justify-center'>
         <div className='bg-white flex rounded-2xl max-w-3xl p-5 w-full'>
             <div className='w-1/2'>

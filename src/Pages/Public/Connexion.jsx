@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import Header from '../publicPage/Header';
 import study from '../../assets/study.png';
 
-export default function SignIn() {
+export default function Connexion() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({ email: '', password: '' });
@@ -38,7 +37,6 @@ export default function SignIn() {
 
   return (
     <>
-      <Header />
       <section className="mt-5 flex items-center justify-center">
         <div className="bg-white flex rounded-2xl max-w-3xl p-5 w-full">
           <div className="w-1/2">

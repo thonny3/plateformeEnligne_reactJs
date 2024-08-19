@@ -1,21 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import Modal from './components/Modal'
-import Home from './components/publicPage/Home'
-import { Route, Routes } from 'react-router-dom'
-import SignIn from './components/Auth/SignIn'
-import SignUp from './components/Auth/SignUp'
-
+import PublicRoute from './Pages/Public/PublicRoute'
+import AdminRoute from './Pages/Admin/AdminRoute'
+import { Routes,Route } from 'react-router-dom'
 function App() {
 const [open,setOpen] = useState(false)
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/connexion' element={<SignIn/>}/>
-        <Route path='/registre' element={<SignUp/>}/>
-      </Routes>
+    <Routes>
+        <Route path='/*' element={<PublicRoute/>}/>
+        <Route path="/admin/*" element={<AdminRoute/>}/>
+    </Routes>
+   
     </>
   )
 }

@@ -13,9 +13,8 @@ function Header() {
           <ul className="flex items-center gap-[6vw]">
           <li>
               <Link
-                to="/"
-                onClick={() => handleLinkClick('/')}
-                className={`text-sm transition duration-200 ${activeLink === '/' ? 'text-indigo-600 font-bold' : 'text-gray-700 hover:font-bold hover:text-indigo-600'}`}
+                to="/home"
+                className="text-gray-700 text-sm"
               >
                 Acceuil
               </Link>
